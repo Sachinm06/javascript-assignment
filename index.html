@@ -1,12 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
+
+    <!-- ---------------------------next button ------------------------------->
+
+<section id="nxtbtn">
+        <div id="slideshow-container">
+            <img class="slideshow-image" height="500"
+                src="https://images.pexels.com/photos/11013334/pexels-photo-11013334.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+            <img class="slideshow-image" height="500"
+                src="https://images.pexels.com/photos/17831893/pexels-photo-17831893/free-photo-of-pathway-to-the-river.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+            <img class="slideshow-image" height="500"
+                src="https://images.pexels.com/photos/17787835/pexels-photo-17787835/free-photo-of-boat-in-river.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+            <img class="slideshow-image" height="500"
+                src="https://images.pexels.com/photos/17831268/pexels-photo-17831268/free-photo-of-mazot.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+            <img class="slideshow-image" height="500"
+                src="https://images.pexels.com/photos/17601814/pexels-photo-17601814/free-photo-of-light-city-road-traffic.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
     
+            <button id="nextBtn" onclick="showNextImage()">Next</button>
+        </div>
+</section>
+
+
+
+    <!-- ------------------------------dropdown------------------------------- -->
+
+ <div id="dropdwn">
+        <h3>Select a Website:</h3> &nbsp;
+        <button id="visitButton" disabled>Try it</button> &nbsp;
+        <select id="websiteDropdown" onchange="loadHomePage()">
+            <option value="">Select a website</option>
+            <option value="https://panapps.co/">PanApps</option>
+            <option value="https://www.google.com/">Google</option>
+            <option value="https://www.twitter.com">Twitter</option>
+            <option value="https://www.youtube.com">YouTube</option>
+        </select>
+
+ </div>   
+
+
+<!-- -------------------------------form validation------------------------------->
+
+
+<form id="myForm" onsubmit="return validateForm()">
+    <label for="firstname">First Name:</label>
+    <input type="text" id="firstname" name="firstname" required>
+  
+    <label for="lastname">Last Name:</label>
+    <input type="text" id="lastname" name="lastname" required>
+  
+    <label for="phone">Phone:</label>
+    <input type="text" id="phone" name="phone" required>
+  
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+  
+    <label for="country">Country:</label>
+    <input type="text" id="country" name="country" required>
+  
+    <button type="submit">Submit</button>
+  </form>
+  
+
+
+
+
+
+    <script src="./script.js"></script>
+
 </body>
+
 </html>
