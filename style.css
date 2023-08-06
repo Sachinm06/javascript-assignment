@@ -16,7 +16,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .slideshow-image {
@@ -32,19 +32,21 @@
     border-radius: 4px;
     margin-top: 10px;
     color: white;
+    margin-left: 10px;
 }
 
 /* ---------------------dropdown------------------------ */
-#dropdwn{
+#dropdwn {
     background: #245C7C;
     height: 100px;
-    color:white;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 40px;
 }
-#dropdwn h3{
+
+#dropdwn h3 {
     background: transparent;
 }
 
@@ -53,42 +55,68 @@
 
 /* --------------------form validation------------------------- */
 
+#formval {
+    background: #245C7C;
+    margin-top: 40px;
+}
+
 form {
-    max-width: 400px;
+    max-width: 600px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 30px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    background: #CEAF8A;
+    /* text-align: right; */
+}
+
+form h2 {
+    background: transparent;
+    color: white;
 }
 
 label {
     display: block;
     margin-bottom: 5px;
+    background: transparent;
 }
 
 input[type="text"],
 input[type="email"] {
-    width: 100%;
+    width: 50%;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: white;
+   
+}
+
+textarea {
+    width: 50%;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    background: white;
+    text-align: right;
+
 }
 
-button[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-button[type="submit"]:hover {
-    background-color: #45a049;
-}
 
 .alert {
     color: #ff0000;
     margin-bottom: 10px;
 }
+
+
+
+/* ---------------------list boxes------------- */
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+  }
+  .list {
+    width: 150px;
+  }

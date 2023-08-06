@@ -7,13 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
 
     <!-- ---------------------------next button ------------------------------->
 
-<section id="nxtbtn">
+    <section id="nxtbtn">
         <div id="slideshow-container">
             <img class="slideshow-image" height="500"
                 src="https://images.pexels.com/photos/11013334/pexels-photo-11013334.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
@@ -25,16 +31,16 @@
                 src="https://images.pexels.com/photos/17831268/pexels-photo-17831268/free-photo-of-mazot.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
             <img class="slideshow-image" height="500"
                 src="https://images.pexels.com/photos/17601814/pexels-photo-17601814/free-photo-of-light-city-road-traffic.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
-    
+
             <button id="nextBtn" onclick="showNextImage()">Next</button>
         </div>
-</section>
+    </section>
 
 
 
     <!-- ------------------------------dropdown------------------------------- -->
 
- <div id="dropdwn">
+    <div id="dropdwn">
         <h3>Select a Website:</h3> &nbsp;
         <button id="visitButton" disabled>Try it</button> &nbsp;
         <select id="websiteDropdown" onchange="loadHomePage()">
@@ -45,31 +51,80 @@
             <option value="https://www.youtube.com">YouTube</option>
         </select>
 
- </div>   
+    </div>
 
 
-<!-- -------------------------------form validation------------------------------->
+    <!-- -------------------------------form validation------------------------------->
 
 
-<form id="myForm" onsubmit="return validateForm()">
-    <label for="firstname">First Name:</label>
-    <input type="text" id="firstname" name="firstname" required>
-  
-    <label for="lastname">Last Name:</label>
-    <input type="text" id="lastname" name="lastname" required>
-  
-    <label for="phone">Phone:</label>
-    <input type="text" id="phone" name="phone" required>
-  
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
-  
-    <label for="country">Country:</label>
-    <input type="text" id="country" name="country" required>
-  
-    <button type="submit">Submit</button>
-  </form>
-  
+    <section id="formval">
+        <form id="myForm" onsubmit="return validateForm()">
+            <h2 class="text-center">Registration Form</h2>
+            <hr class="text-white">
+
+            <label for="firstname">First Name:</label>
+            <input type="text" id="firstname" name="firstname" required><br>
+
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="lastname" name="lastname" required><br>
+
+            <label for="lastname">Address:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <textarea name="address" type="text" id="" cols="10" rows="3"></textarea><br>
+
+            <label for="email">Email: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="phone">Mobile:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" id="phone" name="phone" required><br>
+
+            <label for="country">Country:&nbsp;&nbsp;</label>
+            <input type="text" id="country" name="country" required><br>
+
+            <label for="phone">Gender:&nbsp;&nbsp;</label>
+            <label for="male">Male</label>
+
+            <input type="radio" name="gender" value="male" id="male">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" value="female" id="female">
+            <br>
+
+            <label for="phone">Hobbies:</label>
+
+            <input type="checkbox" name="hobbies" value="reading" id="reading">
+            <label for="reading">Reading</label>
+
+            <input type="checkbox" name="hobbies" value="driving" id="driving">
+            <label for="driving">Driving</label>
+
+            <input type="checkbox" name="hobbies" value="swimming" id="swimming">
+            <label for="swimming">Swimming</label> <br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+
+<!-- -------------------------------------list boxes----------------------------------- -->
+
+<div class="container">
+    <select id="list1" class="list" size="5" multiple>
+      <option value="item1">Item 1</option>
+      <option value="item2">Item 2</option>
+      <option value="item3">Item 3</option>
+      <option value="item4">Item 4</option>
+      <option value="item5">Item 5</option>
+    </select>
+
+    <div>
+      <button onclick="add()">Add</button><br>
+      <button onclick="addAll()">Add All</button><br>
+      <button onclick="addMultiple()">Add Multiple</button><br>
+    </div>
+
+    <select id="list2" class="list" size="5" multiple></select>
+  </div>
+
+
 
 
 
