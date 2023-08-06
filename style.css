@@ -1,5 +1,5 @@
 * {
-    background: rgb(192, 188, 188);
+    /* background: rgb(137, 132, 132); */
     margin: 0;
 }
 
@@ -52,14 +52,38 @@
 
 
 /* ---------------------list boxes------------- */
+#listbox{
+    background: #245C7C;
+    margin-top: 40px;
+    color: white;
 
+}
 .container {
     display: flex;
-    justify-content: space-around;
-    margin-top: 30px;
+    justify-content: center;
+    background: transparent;
+    
   }
   .list {
-    width: 150px;
+    width: 100px;
+    background: white;
+    color: black;
+    border: #0c0c0c solid 2px;
+
+  }
+  .container select option{
+      background:transparent;
+  }
+  .container div{
+      background: transparent;
+      display: flex;
+      align-items: flex-end;
+  }
+  .container div button{
+      background: white;
+      color: black;
+      border: #0c0c0c solid 2px;
+
   }
 
 /* --------------------form validation------------------------- */
@@ -67,6 +91,7 @@
 #formval {
     background: #245C7C;
     margin-top: 40px;
+    color: white;
 }
 
 form {

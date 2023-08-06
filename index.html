@@ -41,7 +41,7 @@
     <!-- ------------------------------dropdown------------------------------- -->
 
     <div id="dropdwn">
-        <h3>Select a Website:</h3> &nbsp;
+        <h3>2. Drop down</h3> &nbsp;
         <button id="visitButton" disabled>Try it</button> &nbsp;
         <select id="websiteDropdown" onchange="loadHomePage()">
             <option value="">Select a website</option>
@@ -56,28 +56,52 @@
 
     <!-- -------------------------------------list boxes----------------------------------- -->
 
-<div class="container">
-    <select id="list1" class="list" size="5" multiple>
-      <option value="item1">Item 1</option>
-      <option value="item2">Item 2</option>
-      <option value="item3">Item 3</option>
-      <option value="item4">Item 4</option>
-      <option value="item5">Item 5</option>
-    </select>
+    <section id="listbox">
+        <h3 class="text-center">3. List boxes</h3><br>
 
-    <div>
-      <button onclick="add()">Add</button>
-      <button onclick="addAll()">Add All</button>
-      <button onclick="addMultiple()">Add Multiple</button><br>
-    </div>
+        <div class="container">
 
-    <select id="list2" class="list" size="5" multiple></select>
-  </div>
+            <select id="list1" class="list" size="4" multiple>
+                <option value="item1">Item 1</option>
+                <option value="item2">Item 2</option>
+                <option value="item3">Item 3</option>
+                <option value="item4">Item 4</option>
+                <option value="item5">Item 5</option>
+                <option value="item3">Item 6</option>
+                <option value="item4">Item 7</option>
+                <option value="item5">Item 8</option>
+            </select>
+            <div>
+                <button onclick="add()">Add</button>
+                <button onclick="addAll()">Add All</button>
+                <button onclick="addMultiple()">Add Multiple</button>
+            </div>
+
+            <select id="list2" class="list" size="4" multiple></select>
+        </div>
+    </section>
+
+
+    <!--  -->
+
+
+
+    <form id="myForm" method="post" action="">
+        <input type="text" name="inputField" placeholder="Enter your data here">
+        <br>
+        <button type="submit" name="saveAdd" onclick="changeAction('saveAdd')">Save and Add</button>
+        <button type="submit" name="viewShow" onclick="changeAction('viewShow.html')">View and Show</button>
+        <button type="submit" name="otherButton" onclick="changeAction('other-action.html')">Other Button</button>
+    </form>
+
+
+
 
     <!-- -------------------------------form validation------------------------------->
 
 
     <section id="formval">
+        <h3 class="text-center"> 5. Form validation</h3>
         <form id="myForm" onsubmit="return validateForm()">
             <h2 class="text-center">Registration Form</h2>
             <hr class="text-white">
@@ -122,7 +146,6 @@
             <button type="submit">Submit</button>
         </form>
     </section>
-
 
 
 

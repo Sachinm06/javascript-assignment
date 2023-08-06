@@ -63,6 +63,12 @@ function add() {
     });
   }
 
+
+//   --------------------------------
+
+
+
+
 // ----------------------------------form validation------------------------------------
 
 function validateForm() {
@@ -107,4 +113,3 @@ function validateForm() {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
   }
   
-
