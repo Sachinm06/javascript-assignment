@@ -29,6 +29,40 @@ function loadHomePage() {
     }
 }
 
+
+//   --------------------------------------list boxes------------------------------------
+
+function add() {
+    const list1 = document.getElementById("list1");
+    const list2 = document.getElementById("list2");
+
+    const selectedOptions = Array.from(list1.selectedOptions);
+
+    selectedOptions.forEach((option) => {
+      list2.appendChild(option);
+    });
+  }
+
+  function addAll() {
+    const list1 = document.getElementById("list1");
+    const list2 = document.getElementById("list2");
+
+    while (list1.options.length > 0) {
+      list2.appendChild(list1.options[0]);
+    }
+  }
+
+  function addMultiple() {
+    const list1 = document.getElementById("list1");
+    const list2 = document.getElementById("list2");
+
+    const selectedOptions = Array.from(list1.selectedOptions);
+
+    selectedOptions.forEach((option) => {
+      list2.appendChild(option);
+    });
+  }
+
 // ----------------------------------form validation------------------------------------
 
 function validateForm() {
@@ -74,35 +108,3 @@ function validateForm() {
   }
   
 
-//   --------------------------------------list boxes------------------------------------
-
-function add() {
-    const list1 = document.getElementById("list1");
-    const list2 = document.getElementById("list2");
-
-    const selectedOptions = Array.from(list1.selectedOptions);
-
-    selectedOptions.forEach((option) => {
-      list2.appendChild(option);
-    });
-  }
-
-  function addAll() {
-    const list1 = document.getElementById("list1");
-    const list2 = document.getElementById("list2");
-
-    while (list1.options.length > 0) {
-      list2.appendChild(list1.options[0]);
-    }
-  }
-
-  function addMultiple() {
-    const list1 = document.getElementById("list1");
-    const list2 = document.getElementById("list2");
-
-    const selectedOptions = Array.from(list1.selectedOptions);
-
-    selectedOptions.forEach((option) => {
-      list2.appendChild(option);
-    });
-  }

@@ -51,7 +51,16 @@
 }
 
 
+/* ---------------------list boxes------------- */
 
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+  }
+  .list {
+    width: 150px;
+  }
 
 /* --------------------form validation------------------------- */
 
@@ -110,13 +119,3 @@ textarea {
 
 
 
-/* ---------------------list boxes------------- */
-
-.container {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 30px;
-  }
-  .list {
-    width: 150px;
-  }
