@@ -157,3 +157,13 @@ textarea {
     color: #ff0000;
     margin-bottom: 10px;
 }
+
+/* ------------------------------local storage------------------- */
+
+#localstr{
+    background: #245C7C;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
