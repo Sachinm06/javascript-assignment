@@ -64,9 +64,25 @@ function add() {
   }
 
 
-//   --------------------------------
+//   --------------------------------dynamic form----------------------------------------
 
-
+function setFormAction(action) {
+    var form = document.getElementById('myForm1');
+    switch (action) {
+      case 'save':
+        form.action = 'save_page.html'; 
+        break;
+      case 'view':
+        form.action = 'view_page.html'; 
+        break;
+      case 'edit':
+        form.action = '/Users/sachinmammoottilsibichan/Desktop/PanApps/Projects/Javascript assignment/edit_page.html'; 
+        break;
+      default:
+        form.action = '';
+        break;
+    }
+  }
 
 
 // ----------------------------------form validation------------------------------------

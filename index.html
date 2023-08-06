@@ -20,6 +20,7 @@
     <!-- ---------------------------next button ------------------------------->
 
     <section id="nxtbtn">
+        <h3 class="text-center">1. Images</h3>
         <div id="slideshow-container">
             <img class="slideshow-image" height="500"
                 src="https://images.pexels.com/photos/11013334/pexels-photo-11013334.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
@@ -82,20 +83,18 @@
     </section>
 
 
-    <!--  -->
+    <!--------------------------------- dynamic form --------------------------------------->
 
-
-
-    <form id="myForm" method="post" action="">
-        <input type="text" name="inputField" placeholder="Enter your data here">
-        <br>
-        <button type="submit" name="saveAdd" onclick="changeAction('saveAdd')">Save and Add</button>
-        <button type="submit" name="viewShow" onclick="changeAction('viewShow.html')">View and Show</button>
-        <button type="submit" name="otherButton" onclick="changeAction('other-action.html')">Other Button</button>
-    </form>
-
-
-
+   <section id="dyform">
+       <h3 class="text-center">4. Dynamic form</h3>
+        <form id="myForm1" method="post" action="">
+            <input type="text" name="name" placeholder="Name">
+            
+            <button type="submit" name="submit" value="save" onclick="setFormAction('save')">Save</button>
+            <button type="submit" name="submit" value="view" onclick="setFormAction('view')">View</button>
+            <button type="submit" name="submit" value="edit" onclick="setFormAction('edit')">Edit</button>
+          </form>
+   </section>
 
     <!-- -------------------------------form validation------------------------------->
 
